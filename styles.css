@@ -1,0 +1,66 @@
+body {
+  text-align: center;
+  display: inline-block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 10px;
+  display: block;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin: 0;
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+h2 {
+  margin: 10px;
+  padding: 0px;
+  text-align: center;
+  font-size: 20px;
+}
+h3 {
+  margin: 10px;
+  padding: 0px;
+  text-align: center;
+  font-size: 20px;
+}
+.temperature {
+  margin: 10px;
+  padding: 0px;
+  text-align: center;
+  font-size: 20px;
+}
+.days {
+  margin: 0;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  display: inline-block;
+}
+
+.row {
+  margin: 10px;
+  padding: 0px;
+  color: black;
+  text-align: center;
+}
+
+.search-form {
+  text-align: left;
+  display: inline-block;
+}
+
+.col-6 {
+  display: inline-block;
+  padding: 10px;
+  margin: 0px;
+}
+.col-3 {
+  text-align: left;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+}
