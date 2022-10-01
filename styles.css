@@ -4,17 +4,18 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   padding: 10px;
   display: block;
-  background: #f6f2fe;
+  background-color: #f6f2fe;
 }
 
 h1 {
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 150;
   line-height: 28px;
   margin: 0;
   color: black;
   text-align: center;
   padding: 10px;
+  background-color: blueviolet;
 }
 h2 {
   margin: 10px;
@@ -47,6 +48,7 @@ h3 {
   padding: 0px;
   color: black;
   text-align: center;
+  background-color: blue;
 }
 
 .search-form {
