@@ -29,6 +29,7 @@ dateElement.innerHTML = formatDate(currentTime);
 //city, icon, temperature
 function weather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
+
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
@@ -37,7 +38,7 @@ function weather(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
   response.data.main.temp;
   document.querySelector("#temperature").innerHTML = `${Math.round(
-    response.data.main.temp
+    (celsiusTemperature = response.data.main.temp)
   )}`;
 }
 //search city
@@ -64,9 +65,8 @@ function displayCelsiusTemperature(event) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+let celsiusTemperature = null;
 
-let celsiusTemperature = response.data.main.temp;
-temperatureElement.innerHTML = Math.round(celsiusTemperature);
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
