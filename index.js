@@ -75,7 +75,7 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 //Column repeat
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
-  let forecastHTML = `<div class="row">`;
+
   let day = [
     "Sunday",
     "Monday",
@@ -85,18 +85,21 @@ function displayForecast() {
     "Friday",
     "Saturday",
   ];
+  let forecastHTML = `<div class="row">`;
   day.forEach(function (day) {
     forecastHTML =
       forecastHTML +
       `<div class="border + col">
-                                <div class="weather-forecast-day">${day}</div>
-                                <span class="weather-forecast-temperature">3°C</span>
-                                </br><img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt=""
-                                    width="42" />
-                            </div>
-                   </div>`;
+          <div class="weather-forecast-day">${day}</div>
+          <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt=""
+          width="42" />
+           <div class="weather-forecast-temperatures">
+           <span class="weather-forecast-temperature">3°C</span>
+           </div>
+        </div>`;
   });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
 }
 displayForecast();
