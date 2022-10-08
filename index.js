@@ -76,7 +76,7 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
-  let days = [
+  let day = [
     "Sunday",
     "Monday",
     "Tuesday",
