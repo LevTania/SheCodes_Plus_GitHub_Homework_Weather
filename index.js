@@ -72,3 +72,31 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+//Column repeat
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  day.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="border + col">
+                                <div class="weather-forecast-day">${day}</div>
+                                <span class="weather-forecast-temperature">3°C</span>
+                                </br><img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt=""
+                                    width="42" />
+                            </div>
+                   </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+displayForecast();
