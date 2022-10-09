@@ -19,8 +19,15 @@ body {
   font-family: Georgia;
   padding: 40px;
   display: block;
-  background-color: #f6f2fe;
-  background-image: url(...pexels-pixabay-531767.jpg);
+  background: url('https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: 100% auto;
+  min-height: 100%;
+  min-width: 640px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 h1 {
