@@ -15,9 +15,8 @@
 
 body {
   margin: 30px auto;
-  text-align: center;
   display: inline-block;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia;
   padding: 40px;
   display: block;
   background-color: #f6f2fe;
@@ -25,6 +24,17 @@ body {
 
 h1 {
   font-size: 24px;
+  font-weight: 150;
+  line-height: 25px;
+  margin: 0;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  box-shadow: 0px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 20px;
   font-weight: 150;
   line-height: 25px;
   margin: 0;
@@ -57,12 +67,14 @@ h1 {
 }
 
 .col-6 {
+  text-align: center;
   display: inline-block;
-  padding: 0px auto;
+  padding: 10px auto;
   margin: 30px auto;
 }
 
 .col-3 {
+  text-align: center;
   text-align: left;
   display: inline-block;
   padding: 0px;
