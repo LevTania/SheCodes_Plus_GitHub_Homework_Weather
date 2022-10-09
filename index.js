@@ -84,7 +84,7 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 //Column repeat
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
   let day = [
@@ -97,15 +97,15 @@ function displayForecast(response) {
     "Saturday",
   ];
   let forecastHTML = `<div class="row">`;
-  day.forEach(function (day) {
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `<div class="border + col">
-          <div class="weather-forecast-day">${day}</div>
-          <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt=""
+          <div class="weather-forecast-day">${forecastDay.dt}</div>
+          <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" alt=""
           width="42" />
            <div class="weather-forecast-temperatures">
-           <span class="weather-forecast-temperature">3°C</span>
+           <span class="weather-forecast-temperature">${forecastDay.temp.day}°</span>
            </div>
         </div>`;
   });
