@@ -20,6 +20,7 @@ body {
   padding: 40px;
   display: block;
   background-color: #f6f2fe;
+  background-image: url(...pexels-pixabay-531767.jpg);
 }
 
 h1 {
@@ -32,9 +33,11 @@ h1 {
   text-align: center;
 }
 
-img {
+.iconTop {
   text-align: center;
   display: block;
+  position: absolute;
+  right: 90%;
 }
 
 h2 {
