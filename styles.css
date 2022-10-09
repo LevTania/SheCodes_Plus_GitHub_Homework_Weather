@@ -2,24 +2,24 @@
   max-width: 700px;
   border-radius: 5px;
   border: 1px solid black;
-  background-color: white;
+  background: #FFFAE7;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .border2 {
   border-radius: 5px;
   border: 1px solid black;
-  background-color: white;
+  background-color: #FFFAE7;
   margin: 4%;
 }
 
 body {
   margin: 30px auto;
   display: inline-block;
-  font-family: Georgia;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding: 40px;
   display: block;
-  background: url('https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background: url('https://images.pexels.com/photos/314726/pexels-photo-314726.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-size: 100% auto;
   min-height: 100%;
   min-width: 640px;
