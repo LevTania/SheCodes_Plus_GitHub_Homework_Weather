@@ -30,7 +30,11 @@ h1 {
   padding: 10px;
   color: black;
   text-align: center;
-  box-shadow: 0px rgba(0, 0, 0, 0.3);
+}
+
+img {
+  text-align: center;
+  display: block;
 }
 
 h2 {
@@ -41,7 +45,6 @@ h2 {
   padding: 10px;
   color: black;
   text-align: center;
-  box-shadow: 0px rgba(0, 0, 0, 0.3);
 }
 
 .temperature {
