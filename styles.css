@@ -15,19 +15,13 @@
 
 body {
   margin: 30px auto;
-  display: inline-block;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding: 40px;
   display: block;
   background: url('https://images.pexels.com/photos/314726/pexels-photo-314726.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-size: 100% auto;
-  min-height: 100%;
-  min-width: 640px;
   width: 100%;
   height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 
 a {
