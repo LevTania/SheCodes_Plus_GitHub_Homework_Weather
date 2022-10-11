@@ -30,7 +30,7 @@ dateElement.innerHTML = formatDate(currentTime);
 //Forecast prediction (coordinates)
 function getForecast(coordinates) {
   console.log(coordinates);
-  let key = "49b631c45785fe73d2a88477803dea22";
+  let key = "cb286bad3607984b41ed10c8de5cf00e";
   let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${key}&units=metric`;
   axios.get(url).then(displayForecast);
 }
@@ -56,7 +56,7 @@ function search(event) {
   event.preventDefault();
   let cityInput = document.querySelector("#city-input");
   let city = cityInput.value;
-  let key = "49b631c45785fe73d2a88477803dea22";
+  let key = "cb286bad3607984b41ed10c8de5cf00e";
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`;
   axios.get(url).then(weather);
 }
